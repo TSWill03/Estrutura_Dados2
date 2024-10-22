@@ -5,8 +5,7 @@ import java.util.Arrays;
 
 public class MainExerc4 {
     public static void main(String[] args) {
-        final int tamanhoArray = 100000;
-        final int ValorMaximo = 100000;
+        final int ValorMaximo = 100000; //tamanhoArray
         final int numExecucoes = 10;
 
         Random random = new Random();
@@ -18,13 +17,13 @@ public class MainExerc4 {
 
         for (int i = 0; i < numExecucoes; i++) {
 
-            int[] ArrayOriginal = new int[tamanhoArray];
-            for (int j = 0; j < tamanhoArray; j++) {
+            int[] ArrayOriginal = new int[ValorMaximo];
+            for (int j = 0; j < ValorMaximo; j++) {
                 ArrayOriginal[j] = random.nextInt(ValorMaximo);
             }
 
-            int[] bubbleSorted = Arrays.copyOf(ArrayOriginal, tamanhoArray);
-            int[] bubbleSortedMelhorado = Arrays.copyOf(ArrayOriginal, tamanhoArray);
+            int[] bubbleSorted = Arrays.copyOf(ArrayOriginal, ValorMaximo);
+            int[] bubbleSortedMelhorado = Arrays.copyOf(ArrayOriginal, ValorMaximo);
 
             long start = System.currentTimeMillis();
             bubbleSort.bubbleSort(bubbleSorted);
@@ -39,16 +38,16 @@ public class MainExerc4 {
             System.out.println("Execução " + (i + 1) + " finalizada\n");
         }
 
-        System.out.println("Tempo de execução (em milissegundos) para cada algoritmo e execução:");
-        System.out.println("Execução  | BubbleSort   | BubbleSortMelhorado");
+        System.out.println("Tempo de execução para cada algoritmo e execução:");
+        System.out.println("Execução                   |   BubbleSort   |    BubbleSortMelhorado");
         for (int i = 0; i < numExecucoes; i++) {
-            System.out.printf("Execução %d (Nanoseg):   | %13d | %13d\n",
+            System.out.printf("Execução %2d  (Nanoseg):    | %14d | %13d\n",
                     i + 1, timesNano[i][0], timesNano[i][1]);
 
-            System.out.printf("Execução %d (Microseg):  | %13d | %13d\n",
+            System.out.printf("Execução %2d  (Microseg):   | %14d | %13d\n",
                     i + 1, timesNano[i][0] / 1000, timesNano[i][1] / 1000);
 
-            System.out.printf("Execução %d (Miliseg):   | %13d | %13d\n",
+            System.out.printf("Execução %2d  (Miliseg):    | %14d | %13d\n",
                     i + 1, timesNano[i][0] / 1000000, timesNano[i][1] / 1000000);
 
             System.out.println();
