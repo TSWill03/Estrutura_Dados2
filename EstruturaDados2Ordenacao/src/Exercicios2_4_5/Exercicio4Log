@@ -1,0 +1,81 @@
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 1 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 2 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 3 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 4 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 5 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 6 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 7 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 8 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 9 finalizada
+
+Rodou BubbleSort
+Rodou BubbleSortMelhorado
+Execução 10 finalizada
+
+Tempo de execução para cada algoritmo e execução:
+Execução                   |   BubbleSort   |    BubbleSortMelhorado
+Execução  1  (Nanoseg):    |          13354 |         11540
+Execução  1  (Microseg):   |             13 |            11
+Execução  1  (Miliseg):    |              0 |             0
+
+Execução  2  (Nanoseg):    |          13083 |         11563
+Execução  2  (Microseg):   |             13 |            11
+Execução  2  (Miliseg):    |              0 |             0
+
+Execução  3  (Nanoseg):    |          12601 |         11764
+Execução  3  (Microseg):   |             12 |            11
+Execução  3  (Miliseg):    |              0 |             0
+
+Execução  4  (Nanoseg):    |          12705 |         11833
+Execução  4  (Microseg):   |             12 |            11
+Execução  4  (Miliseg):    |              0 |             0
+
+Execução  5  (Nanoseg):    |          12798 |         11868
+Execução  5  (Microseg):   |             12 |            11
+Execução  5  (Miliseg):    |              0 |             0
+
+Execução  6  (Nanoseg):    |          12764 |         11817
+Execução  6  (Microseg):   |             12 |            11
+Execução  6  (Miliseg):    |              0 |             0
+
+Execução  7  (Nanoseg):    |          12722 |         11785
+Execução  7  (Microseg):   |             12 |            11
+Execução  7  (Miliseg):    |              0 |             0
+
+Execução  8  (Nanoseg):    |          12633 |         11836
+Execução  8  (Microseg):   |             12 |            11
+Execução  8  (Miliseg):    |              0 |             0
+
+Execução  9  (Nanoseg):    |          12700 |         11777
+Execução  9  (Microseg):   |             12 |            11
+Execução  9  (Miliseg):    |              0 |             0
+
+Execução 10  (Nanoseg):    |          12721 |         11847
+Execução 10  (Microseg):   |             12 |            11
+Execução 10  (Miliseg):    |              0 |             0
