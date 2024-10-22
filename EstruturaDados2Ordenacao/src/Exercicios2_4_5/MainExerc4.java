@@ -14,7 +14,7 @@ public class MainExerc4 {
         BubbleSort bubbleSort = new BubbleSort();
         BubbleSortMelhorado bubbleSortMelhorado = new BubbleSortMelhorado();
 
-        long[][] times = new long[numExecucoes][2];
+        long[][] timesNano = new long[numExecucoes][2];
 
         for (int i = 0; i < numExecucoes; i++) {
 
@@ -26,27 +26,32 @@ public class MainExerc4 {
             int[] bubbleSorted = Arrays.copyOf(ArrayOriginal, tamanhoArray);
             int[] bubbleSortedMelhorado = Arrays.copyOf(ArrayOriginal, tamanhoArray);
 
-            // Medindo o tempo do BubbleSort tradicional
             long start = System.currentTimeMillis();
             bubbleSort.bubbleSort(bubbleSorted);
-            times[i][0] = System.currentTimeMillis() - start;
+            timesNano[i][0] = System.currentTimeMillis() - start;
             System.out.println("Rodou BubbleSort");
 
-            // Medindo o tempo do BubbleSort melhorado
             start = System.currentTimeMillis();
             bubbleSortMelhorado.bubbleSort(bubbleSortedMelhorado);
-            times[i][1] = System.currentTimeMillis() - start;
+            timesNano[i][1] = System.currentTimeMillis() - start;
             System.out.println("Rodou BubbleSortMelhorado");
 
             System.out.println("Execução " + (i + 1) + " finalizada\n");
         }
 
-        // Exibindo os tempos de execução para ambos os algoritmos
         System.out.println("Tempo de execução (em milissegundos) para cada algoritmo e execução:");
         System.out.println("Execução  | BubbleSort   | BubbleSortMelhorado");
         for (int i = 0; i < numExecucoes; i++) {
-            System.out.printf("%9d | %12d | %19d \n",
-                    i + 1, times[i][0], times[i][1]);
+            System.out.printf("Execução %d (Nanoseg):   | %13d | %13d\n",
+                    i + 1, timesNano[i][0], timesNano[i][1]);
+
+            System.out.printf("Execução %d (Microseg):  | %13d | %13d\n",
+                    i + 1, timesNano[i][0] / 1000, timesNano[i][1] / 1000);
+
+            System.out.printf("Execução %d (Miliseg):   | %13d | %13d\n",
+                    i + 1, timesNano[i][0] / 1000000, timesNano[i][1] / 1000000);
+
+            System.out.println();
         }
     }
 }
