@@ -18,7 +18,7 @@ public class MainExerc2 {
         InsertionSort insertionSort = new InsertionSort();
         QuickSort quickSort = new QuickSort();
 
-        long[][] times = new long[numExecucoes][6];
+        long[][] timesNano = new long[numExecucoes][6];
 
         for (int i = 0; i < numExecucoes; i++) {
 
@@ -34,46 +34,59 @@ public class MainExerc2 {
             int[] mergeSorted = Arrays.copyOf(ArrayOriginal, tamanhoArray);
             int[] quickSorted = Arrays.copyOf(ArrayOriginal, tamanhoArray);
 
-
-            long start = System.currentTimeMillis();
+            long start = System.nanoTime();
             bubbleSort.bubbleSort(bubbleSorted);
-            times[i][0] = System.currentTimeMillis() - start;
+            long end = System.nanoTime();
+            timesNano[i][0] = end - start;
             System.out.println("Rodou BubbleSort");
 
-            start = System.currentTimeMillis();
+            start = System.nanoTime();
             insertionSort.insertionSort(insertionSorted);
-            times[i][1] = System.currentTimeMillis() - start;
+            end = System.nanoTime();
+            timesNano[i][1] = end - start;
             System.out.println("Rodou InsertionSort");
 
-            start = System.currentTimeMillis();
+            start = System.nanoTime();
             selectionSort.selectionSort(selectionSorted);
-            times[i][2] = System.currentTimeMillis() - start;
+            end = System.nanoTime();
+            timesNano[i][2] = end - start;
             System.out.println("Rodou SelectionSort");
 
-            start = System.currentTimeMillis();
+            start = System.nanoTime();
             shellSort.shellSort(shellSorted);
-            times[i][3] = System.currentTimeMillis() - start;
+            end = System.nanoTime();
+            timesNano[i][3] = end - start;
             System.out.println("Rodou ShellSort");
 
-            start = System.currentTimeMillis();
+            start = System.nanoTime();
             mergeSort.mergeSort(mergeSorted);
-            times[i][4] = System.currentTimeMillis() - start;
+            end = System.nanoTime();
+            timesNano[i][4] = end - start;
             System.out.println("Rodou MergeSort");
 
-            start = System.currentTimeMillis();
+            start = System.nanoTime();
             quickSort.quickSort(quickSorted, 0, quickSorted.length - 1);
-            times[i][5] = System.currentTimeMillis() - start;
+            end = System.nanoTime();
+            timesNano[i][5] = end - start;
             System.out.println("Rodou QuickSort");
 
             System.out.println("Execução " + (i + 1) + " finalizada\n");
         }
-
-
-        System.out.println("Tempo de execução (em milissegundos) para cada algoritmo e execução:");
+        System.out.println("Tempo de execução (em nanosegundos, microssegundos e milissegundos) para cada algoritmo e execução:");
         System.out.println("Execução  | BubbleSort | InsertionSort | SelectionSort | ShellSort | MergeSort | QuickSort");
+
         for (int i = 0; i < numExecucoes; i++) {
-            System.out.printf("%9d | %10d | %13d | %13d | %9d | %9d | %9d\n",
-                    i + 1, times[i][0], times[i][1], times[i][2], times[i][3], times[i][4], times[i][5]);
+
+            System.out.printf("Execução %d (Nanoseg):   | %13d | %13d | %13d | %9d | %9d | %9d\n",
+                    i + 1, timesNano[i][0], timesNano[i][1], timesNano[i][2], timesNano[i][3], timesNano[i][4], timesNano[i][5]);
+
+            System.out.printf("Execução %d (Microseg):  | %13d | %13d | %13d | %9d | %9d | %9d\n",
+                    i + 1, timesNano[i][0] / 1000, timesNano[i][1] / 1000, timesNano[i][2] / 1000, timesNano[i][3] / 1000, timesNano[i][4] / 1000, timesNano[i][5] / 1000);
+
+            System.out.printf("Execução %d (Miliseg):   | %13d | %13d | %13d | %9d | %9d | %9d\n",
+                    i + 1, timesNano[i][0] / 1000000, timesNano[i][1] / 1000000, timesNano[i][2] / 1000000, timesNano[i][3] / 1000000, timesNano[i][4] / 1000000, timesNano[i][5] / 1000000);
+
+            System.out.println();
         }
     }
 }
