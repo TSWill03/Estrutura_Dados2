@@ -1,0 +1,58 @@
+BubbleSort
+[3, 4, 2, 9, 5, 8, 1]
+[3, 4, 2, 5, 9, 8, 1]
+[3, 4, 2, 5, 8, 9, 1]
+[3, 4, 2, 5, 8, 1, 9]
+[3, 2, 4, 5, 8, 1, 9]
+[3, 2, 4, 5, 1, 8, 9]
+[2, 3, 4, 5, 1, 8, 9]
+[2, 3, 4, 1, 5, 8, 9]
+[2, 3, 1, 4, 5, 8, 9]
+[2, 1, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+
+InsertionSort
+[3, 4, 9, 2, 5, 8, 1]
+[3, 4, 9, 2, 5, 8, 1]
+[2, 3, 4, 9, 5, 8, 1]
+[2, 3, 4, 5, 9, 8, 1]
+[2, 3, 4, 5, 8, 9, 1]
+[1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+
+SelectionSort
+[1, 4, 9, 2, 5, 8, 3]
+[1, 2, 9, 4, 5, 8, 3]
+[1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+
+ShellSort
+[3, 4, 1, 2, 5, 8, 9]
+[1, 3, 4, 2, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+
+MergeSort
+[4, 9]
+[3, 4, 9]
+[2, 5]
+[1, 8]
+[1, 2, 5, 8]
+[1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
+
+QuickSort
+Depois de trocar elementos: [3, 1, 9, 2, 5, 8, 4]
+Depois de trocar elementos: [3, 1, 2, 9, 5, 8, 4]
+Depois de reposicionar o pivô: [2, 1, 3, 9, 5, 8, 4]
+Depois da separação com pivô em posição 2: [2, 1, 3, 9, 5, 8, 4]
+Depois de reposicionar o pivô: [1, 2, 3, 9, 5, 8, 4]
+Depois da separação com pivô em posição 1: [1, 2, 3, 9, 5, 8, 4]
+Depois de reposicionar o pivô: [1, 2, 3, 4, 5, 8, 9]
+Depois da separação com pivô em posição 6: [1, 2, 3, 4, 5, 8, 9]
+Depois de reposicionar o pivô: [1, 2, 3, 4, 5, 8, 9]
+Depois da separação com pivô em posição 3: [1, 2, 3, 4, 5, 8, 9]
+Depois de reposicionar o pivô: [1, 2, 3, 4, 5, 8, 9]
+Depois da separação com pivô em posição 4: [1, 2, 3, 4, 5, 8, 9]
+[1, 2, 3, 4, 5, 8, 9]
