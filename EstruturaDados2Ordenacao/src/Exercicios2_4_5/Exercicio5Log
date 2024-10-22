@@ -38,15 +38,54 @@ Rodou QuickSortDualPivot
 Rodou QuickSort
 Execução 10 finalizada
 
-Tempo de execução (em milissegundos) para cada algoritmo e execução:
-Execução  | QuickSortDual | QuickSort
-        1 |            12 |         11
-        2 |             7 |          6
-        3 |             6 |          6
-        4 |             6 |          6
-        5 |             5 |          8
-        6 |             5 |          6
-        7 |             6 |          5
-        8 |             6 |          6
-        9 |             6 |          7
-       10 |             6 |          7
+Tempo de execução para cada algoritmo e execução:
+Execução                   | QuickSortDual |    QuickSort
+Execução  1  (Nanoseg):    |    8749363200 |    9088607100
+Execução  1  (Microseg):   |       8749363 |       9088607
+Execução  1  (Miliseg):    |          8749 |          9088
+Execução  1  (Seg):        |             8 |             9
+
+Execução  2  (Nanoseg):    |    8691657000 |    8781068800
+Execução  2  (Microseg):   |       8691657 |       8781068
+Execução  2  (Miliseg):    |          8691 |          8781
+Execução  2  (Seg):        |             8 |             8
+
+Execução  3  (Nanoseg):    |    8748705600 |    8973428900
+Execução  3  (Microseg):   |       8748705 |       8973428
+Execução  3  (Miliseg):    |          8748 |          8973
+Execução  3  (Seg):        |             8 |             8
+
+Execução  4  (Nanoseg):    |    8557891200 |    8847849900
+Execução  4  (Microseg):   |       8557891 |       8847849
+Execução  4  (Miliseg):    |          8557 |          8847
+Execução  4  (Seg):        |             8 |             8
+
+Execução  5  (Nanoseg):    |    8695236000 |    8872559800
+Execução  5  (Microseg):   |       8695236 |       8872559
+Execução  5  (Miliseg):    |          8695 |          8872
+Execução  5  (Seg):        |             8 |             8
+
+Execução  6  (Nanoseg):    |    8420383100 |    8658017200
+Execução  6  (Microseg):   |       8420383 |       8658017
+Execução  6  (Miliseg):    |          8420 |          8658
+Execução  6  (Seg):        |             8 |             8
+
+Execução  7  (Nanoseg):    |    8518729400 |    9020873600
+Execução  7  (Microseg):   |       8518729 |       9020873
+Execução  7  (Miliseg):    |          8518 |          9020
+Execução  7  (Seg):        |             8 |             9
+
+Execução  8  (Nanoseg):    |    8627475900 |    8866693300
+Execução  8  (Microseg):   |       8627475 |       8866693
+Execução  8  (Miliseg):    |          8627 |          8866
+Execução  8  (Seg):        |             8 |             8
+
+Execução  9  (Nanoseg):    |    8682860100 |    8881742800
+Execução  9  (Microseg):   |       8682860 |       8881742
+Execução  9  (Miliseg):    |          8682 |          8881
+Execução  9  (Seg):        |             8 |             8
+
+Execução 10  (Nanoseg):    |    8544771300 |    8789127500
+Execução 10  (Microseg):   |       8544771 |       8789127
+Execução 10  (Miliseg):    |          8544 |          8789
+Execução 10  (Seg):        |             8 |             8
