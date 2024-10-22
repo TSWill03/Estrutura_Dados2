@@ -1,0 +1,92 @@
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 1 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 2 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 3 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 4 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 5 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 6 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 7 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 8 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 9 finalizada
+
+Rodou BubbleSort
+Rodou InsertionSort
+Rodou SelectionSort
+Rodou ShellSort
+Rodou MergeSort
+Rodou QuickSort
+Execução 10 finalizada
+
+Tempo de execução (em milissegundos) para cada algoritmo e execução:
+Execução  | BubbleSort | InsertionSort | SelectionSort | ShellSort | MergeSort | QuickSort
+        1 |      13465 |          1387 |          3134 |        10 |        20 |         9
+        2 |      13400 |          1210 |          3129 |         9 |        12 |         7
+        3 |      11719 |          1184 |          1284 |         8 |         9 |         6
+        4 |      11982 |          1201 |          1354 |         8 |        11 |         6
+        5 |      12141 |           488 |          1354 |        10 |        12 |         6
+        6 |      12076 |           439 |          1411 |        10 |         8 |         6
+        7 |      12049 |           449 |          1390 |        10 |         8 |         6
+        8 |      12002 |           442 |          1354 |         9 |         9 |         6
+        9 |      11967 |           449 |          1415 |        10 |        11 |         6
+       10 |      12044 |           453 |          1393 |         9 |        12 |         5
