@@ -2,9 +2,7 @@ package Exercicios2_4_5;
 
 public class DualPivotQuickSort {
 
-
-    public int[] dualPivotQuickSort(int[] array, int low, int high)//tive que abusar do stackoverflow aqui, não entendi direito por exemplo porque raios o retorno e int?
-    {
+    public void dualPivotQuickSort(int[] array, int low, int high) {
         if (low < high) {
 
             int[] pivots = partition(array, low, high);
@@ -14,12 +12,19 @@ public class DualPivotQuickSort {
             dualPivotQuickSort(array, p1 + 1, p2 - 1);
             dualPivotQuickSort(array, p2 + 1, high);
         }
-        return array;
     }
 
     private int[] partition(int[] array, int low, int high) {
+
+        int mid = low + (high - low) / 2;
+        if (array[low] > array[mid]) {
+            swap(array, low, mid);
+        }
         if (array[low] > array[high]) {
-            swap(array, low, high); // Garante que array[low] <= array[high]
+            swap(array, low, high);
+        }
+        if (array[mid] > array[high]) {
+            swap(array, mid, high);
         }
 
         int pivot1 = array[low];
@@ -41,7 +46,6 @@ public class DualPivotQuickSort {
             i++;
         }
 
-        // Coloca os pivôs em suas posições corretas
         less--;
         great++;
         swap(array, low, less);
